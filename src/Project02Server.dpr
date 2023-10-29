@@ -22,15 +22,16 @@ uses
   server in 'server.pas';
 
 var
-  Model: TOrmModel;
+  {Model: TOrmModel;
   SampleServer: TSampleServer;
   HttpServer: TRestHttpServer;
-  LogFamily: TSynLogFamily;
+  LogFamily: TSynLogFamily;  }
+  s: string;
   // comment
 begin
   WriteLn('Hello...');
   exit;
-
+  {
   try
     LogFamily := SQLite3Log.Family;
     LogFamily.Level := LOG_VERBOSE;
@@ -63,4 +64,5 @@ begin
       writeLn('Error: ' + E.ClassName + ', ' + E.Message);
     end;
   end;
+  }
 end.

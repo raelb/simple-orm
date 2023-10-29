@@ -9,8 +9,8 @@
         <Filename Value="Project02Server.dpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="21"/>
-        <CursorPos X="24" Y="35"/>
+        <TopLine Value="13"/>
+        <CursorPos X="13" Y="29"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -25,7 +25,12 @@
         <UsageCount Value="20"/>
       </Unit2>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="1">
+      <Position1>
+        <Filename Value="Project02Server.dpr"/>
+        <Caret Line="66" Column="4" TopLine="24"/>
+      </Position1>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
