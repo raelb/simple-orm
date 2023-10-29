@@ -26,31 +26,38 @@ var
   SampleServer: TSampleServer;
   HttpServer: TRestHttpServer;
   LogFamily: TSynLogFamily;
-
+  // comment
 begin
-  LogFamily := SQLite3Log.Family;
-  LogFamily.Level := LOG_VERBOSE;
-  LogFamily.PerThreadLog := ptIdentifiedInOnFile;
-  LogFamily.EchoToConsole := LOG_VERBOSE;
-  Model := CreateSampleModel;
   try
-    SampleServer := TSampleServer.Create(Model, ChangeFileExt(Executable.ProgramFileName,'.db'));
+    LogFamily := SQLite3Log.Family;
+    LogFamily.Level := LOG_VERBOSE;
+    LogFamily.PerThreadLog := ptIdentifiedInOnFile;
+    LogFamily.EchoToConsole := LOG_VERBOSE;
+    Model := CreateSampleModel;
     try
-      SampleServer.DB.Synchronous := smOff;
-      SampleServer.DB.LockingMode := lmExclusive;
-      SampleServer.Server.CreateMissingTables;
-      HttpServer := TRestHttpServer.Create(HttpPort,[SampleServer],'+',HTTP_DEFAULT_MODE, 4);
-      HttpServer.AccessControlAllowOrigin := '*';
+      SampleServer := TSampleServer.Create(Model, ChangeFileExt(Executable.ProgramFileName,'.db'));
       try
-        Writeln('Server started on port ' + HttpPort);
-        Readln;
+        SampleServer.DB.Synchronous := smOff;
+        SampleServer.DB.LockingMode := lmExclusive;
+        SampleServer.Server.CreateMissingTables;
+        HttpServer := TRestHttpServer.Create(HttpPort,[SampleServer],'+',HTTP_DEFAULT_MODE, 4);
+        HttpServer.AccessControlAllowOrigin := '*';
+        try
+          Writeln('Server started on port ' + HttpPort);
+          Readln;
+        finally
+          HttpServer.Free;
+        end;
       finally
-        HttpServer.Free;
+        SampleServer.Free;
       end;
     finally
-      SampleServer.Free;
+      Model.Free;
     end;
-  finally
-    Model.Free;
+  except
+    on E: Exception do
+    begin
+      writeLn('Error: ' + E.ClassName + ', ' + E.Message);
+    end;
   end;
 end.

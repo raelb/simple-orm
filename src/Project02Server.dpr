@@ -28,6 +28,9 @@ var
   LogFamily: TSynLogFamily;
   // comment
 begin
+  WriteLn('Hello...');
+  exit;
+
   try
     LogFamily := SQLite3Log.Family;
     LogFamily.Level := LOG_VERBOSE;
