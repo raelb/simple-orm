@@ -4,36 +4,50 @@
     <PathDelim Value="\"/>
     <Version Value="12"/>
     <BuildModes Active="Default"/>
-    <Units Count="3">
+    <Units Count="4">
       <Unit0>
         <Filename Value="Project02Server.dpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="7"/>
-        <CursorPos X="18" Y="16"/>
+        <TopLine Value="8"/>
+        <CursorPos X="15" Y="21"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="data.pas"/>
+        <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
         <Filename Value="server.pas"/>
+        <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\mORMot2\src\core\mormot.core.log.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7772"/>
+        <CursorPos X="25" Y="7783"/>
+        <UsageCount Value="10"/>
+      </Unit3>
     </Units>
-    <JumpHistory Count="1">
+    <JumpHistory Count="3" HistoryIndex="2">
       <Position1>
         <Filename Value="Project02Server.dpr"/>
         <Caret Line="66" Column="4" TopLine="24"/>
       </Position1>
+      <Position2>
+        <Filename Value="Project02Server.dpr"/>
+        <Caret Line="34" Column="16"/>
+      </Position2>
+      <Position3>
+        <Filename Value="server.pas"/>
+      </Position3>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

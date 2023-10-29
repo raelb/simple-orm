@@ -14,23 +14,22 @@ uses
   SysUtils,
   mormot.core.base,
   mormot.core.os,
-  mormot.core.log{,
+  mormot.core.log,
   mormot.db.raw.sqlite3,
   mormot.orm.core,
-  mormot.rest.http.server  }
+  mormot.rest.http.server,
+  server
   ;
 
 var
-  {Model: TOrmModel;
+  Model: TOrmModel;
   SampleServer: TSampleServer;
   HttpServer: TRestHttpServer;
-  LogFamily: TSynLogFamily;  }
+  LogFamily: TSynLogFamily;
   s: string;
   // comment
 begin
   WriteLn('Hello...');
-  exit;
-  {
   try
     LogFamily := SQLite3Log.Family;
     LogFamily.Level := LOG_VERBOSE;
@@ -63,5 +62,4 @@ begin
       writeLn('Error: ' + E.ClassName + ', ' + E.Message);
     end;
   end;
-  }
 end.
