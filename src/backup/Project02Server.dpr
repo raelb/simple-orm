@@ -11,8 +11,8 @@ program Project02Server;
 {$I mormot.defines.inc}
 uses
   {$I mormot.uses.inc}
-  SysUtils{,
-  mormot.core.base,
+  SysUtils,
+  mormot.core.base {,
   mormot.core.os,
   mormot.core.log,
   mormot.db.raw.sqlite3,
