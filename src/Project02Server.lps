@@ -9,20 +9,24 @@
         <Filename Value="Project02Server.dpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="13"/>
-        <CursorPos X="13" Y="29"/>
+        <TopLine Value="7"/>
+        <CursorPos X="29" Y="20"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="data.pas"/>
-        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
         <Filename Value="server.pas"/>
-        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit2>
     </Units>
     <JumpHistory Count="1">

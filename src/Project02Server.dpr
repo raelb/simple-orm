@@ -11,15 +11,14 @@ program Project02Server;
 {$I mormot.defines.inc}
 uses
   {$I mormot.uses.inc}
-  SysUtils,
+  SysUtils{,
   mormot.core.base,
   mormot.core.os,
   mormot.core.log,
   mormot.db.raw.sqlite3,
   mormot.orm.core,
-  mormot.rest.http.server,
-  data in 'data.pas',
-  server in 'server.pas';
+  mormot.rest.http.server  }
+  ;
 
 var
   {Model: TOrmModel;

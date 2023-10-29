@@ -17,15 +17,14 @@ uses
   mormot.core.log,
   mormot.db.raw.sqlite3,
   mormot.orm.core,
-  mormot.rest.http.server,
-  data in 'data.pas',
-  server in 'server.pas';
+  mormot.rest.http.server;
 
 var
   {Model: TOrmModel;
   SampleServer: TSampleServer;
   HttpServer: TRestHttpServer;
   LogFamily: TSynLogFamily;  }
+  s: string;
   // comment
 begin
   WriteLn('Hello...');
