@@ -13,8 +13,8 @@ uses
   {$I mormot.uses.inc}
   SysUtils,
   mormot.core.base,
-  mormot.core.os,
-  mormot.core.log{,
+  mormot.core.os{,
+  mormot.core.log,
   mormot.db.raw.sqlite3,
   mormot.orm.core,
   mormot.rest.http.server  }
