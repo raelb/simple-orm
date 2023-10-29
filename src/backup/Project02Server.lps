@@ -8,8 +8,9 @@
       <Unit0>
         <Filename Value="Project02Server.dpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="13"/>
-        <CursorPos X="31" Y="38"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="7"/>
+        <CursorPos X="29" Y="20"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -22,7 +23,6 @@
       </Unit1>
       <Unit2>
         <Filename Value="server.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
